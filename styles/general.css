@@ -1,0 +1,41 @@
+/* ---------------------general styles----------------- */
+body {
+    font-family: "Varela Round", sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+/* --------------------------Links------------------------ */
+a {
+    text-decoration: none;
+}
+
+/* --------------------------Header----------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-toggle {
+    border: 0;
+    background-color: white;
+}
+
+#nav-menu {
+    display: none;
+}
+
+#nav-menu.toggled {
+    display: block;
+}
