@@ -25,8 +25,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0.2rem 0.5rem;
 }
-
+header p {
+    z-index: 999;
+}
 #menu-toggle {
     border: 0;
     background-color: white;
@@ -34,8 +37,25 @@ header {
 
 #nav-menu {
     display: none;
+    height: 0;
+    overflow: hidden;
+    padding-left: 0;
+    transition: height 0.5s ease;
 }
 
 #nav-menu.toggled {
     display: block;
+    position: absolute;
+    text-align: right;
+    top: 2.5rem;
+    height: 6.5rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+}
+
+#nav-menu li {
+    margin-bottom: 0.5rem;
 }
