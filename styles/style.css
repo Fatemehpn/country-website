@@ -64,6 +64,7 @@ h1 {
 /* ----------------------Summary-Section----------------- */
 .summary-section {
     margin: 2rem auto;
+    margin-bottom: 4rem;
 }
 
 .introduction h2 {
@@ -74,8 +75,24 @@ h1 {
 .introduction figure img {
     object-fit: cover;
 }
+
 /* ---------------------Testimonial-Section--------------- */
+.testimonial-section article {
+    margin: 0 auto;
+}
+
 .testimonial-section img {
     width: 10rem;
-    border-radius: 70%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.testimonial-section blockquote {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-section p {
+    margin-bottom: 0.7rem;
 }
