@@ -1,14 +1,26 @@
+/* -----------------------Colors--------------------- */
+/* 
+-#025920
+ */
+
 /* ---------------------general styles----------------- */
 body {
     font-family: "Varela Round", sans-serif;
+    line-height: 1.5;
 }
 
 h1 {
     font-size: 3rem;
 }
 
-p {
+h2 {
     font-size: 1.5rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 li {
@@ -52,7 +64,7 @@ header p {
     left: 0;
     right: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 200;
     background-color: white;
 }
 
