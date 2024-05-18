@@ -17,25 +17,24 @@ li {
 /* --------------------------Links------------------------ */
 a {
 }
-
+a:visited {
+}
+a:focus {
+}
+a:hover
 /* ---------------------------Main------------------------- */
 
 /* ------------------Hero-Section----------------- */
-.hero-section {
-    position: relative;
-    margin-bottom: 1rem;
-}
-
-.hero-img {
+.hero-video {
     height: 15rem;
     width: 100%;
     object-fit: cover;
 }
-h1 {
+.hero-section h1 {
     position: absolute;
     left: 0;
     right: 0;
-    top: 48%;
+    top: 35%;
     margin: 0 auto;
     width: 40%;
     text-align: center;
@@ -109,4 +108,33 @@ h1 {
 
 .testimonial-section p {
     margin-bottom: 0.7rem;
+}
+
+/* discover.html
+ ------------------------------------------------------------*/
+/* ---------------------------Main------------------------- */
+
+/* ------------------Hero-Section----------------- */
+.discover-img {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.discover-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2%;
+    color: white;
+}
+
+.discover-text h1 {
+    margin-bottom: auto;
+    margin-top: 0;
+}
+
+.discover-text p {
+    margin-top: 0;
+    margin-bottom: 0;
 }

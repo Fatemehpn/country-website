@@ -76,6 +76,12 @@ header p {
     margin-bottom: 0.3rem;
 }
 
+/* ------------------------Hero Section------------- */
+.hero {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
 /* -------------------------Footer------------------- */
 footer {
     display: flex;
