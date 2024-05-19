@@ -156,7 +156,7 @@ a {
 }
 .destination-menu a {
     border: 0.1rem solid black;
-    padding: 0.4rem 0.5rem;
+    padding: 0.4rem 0.4rem;
     border-radius: 0.3rem;
 }
 
@@ -189,6 +189,7 @@ a {
     padding: 1rem;
     border: 0.1rem solid black;
     border-radius: 0.2rem;
+    margin-bottom: 1rem;
 }
 
 .discover-figure img {
@@ -196,9 +197,62 @@ a {
     max-height: 20rem;
     width: 100%;
     object-fit: cover;
-    margin: 0 auto 1rem;
+    margin: 0 auto 0.5rem;
 }
 
+.discover-figure h3 {
+    margin-bottom: 0.2rem;
+}
 .discover-figure figcaption {
+    font-size: 0.7rem;
+}
+
+/* food.html
+ ------------------------------------------------------------*/
+/* ---------------------------Main------------------------- */
+
+/* ------------------Hero-Section----------------- */
+.food-img {
+    max-height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.food-hero h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+    text-align: center;
+    z-index: 300;
+    color: white;
+}
+
+/* ---------------------Dicover-Foods--------------- */
+.food-article figure {
+    margin-bottom: 1.7rem;
+    border-bottom: 0.1rem solid black;
+}
+
+.food-article img {
+    transition: all 0.4s ease-in-out;
+    display: block;
+    max-height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+}
+
+.food-article img:hover {
+    transform: scale(1.1);
+}
+
+.food-article h3 {
+    margin-bottom: 0.2rem;
+    margin-top: 0.7rem;
+}
+.food-article figcaption {
     font-size: 0.7rem;
 }
