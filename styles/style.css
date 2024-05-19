@@ -17,16 +17,12 @@ li {
 /* --------------------------Links------------------------ */
 a {
 }
-a:visited {
-}
-a:focus {
-}
-a:hover
+
 /* ---------------------------Main------------------------- */
 
 /* ------------------Hero-Section----------------- */
 .hero-video {
-    height: 15rem;
+    max-height: 25rem;
     width: 100%;
     object-fit: cover;
 }
@@ -115,8 +111,11 @@ a:hover
 /* ---------------------------Main------------------------- */
 
 /* ------------------Hero-Section----------------- */
+.discover-hero {
+    margin-bottom: 3rem;
+}
 .discover-img {
-    height: 15rem;
+    max-height: 25rem;
     width: 100%;
     object-fit: cover;
 }
@@ -137,4 +136,69 @@ a:hover
 .discover-text p {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+/* ---------------------Dicover-Destinations--------------- */
+.discover-destinations h2 {
+    margin-bottom: 0;
+}
+
+.destination-menu {
+    width: 70%;
+    margin: 0 auto 1.5rem;
+}
+
+.destination-menu ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.destination-menu a {
+    border: 0.1rem solid black;
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+#tehran {
+    display: none;
+}
+#tehran.tehran-toggled {
+    display: block;
+}
+
+#isfahan {
+    display: none;
+}
+#isfahan.isfahan-toggled {
+    display: block;
+}
+
+#shiraz {
+    display: none;
+}
+#shiraz.shiraz-toggled {
+    display: block;
+}
+
+.discover-destinations article {
+    margin: 0 auto;
+}
+
+.discover-figure {
+    padding: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+}
+
+.discover-figure img {
+    display: block;
+    max-height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+}
+
+.discover-figure figcaption {
+    font-size: 0.7rem;
 }

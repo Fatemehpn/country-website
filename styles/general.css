@@ -35,6 +35,9 @@ li {
 a {
     text-decoration: none;
 }
+a:visited {
+    color: #025920;
+}
 
 /* --------------------------Header----------------------- */
 header {
