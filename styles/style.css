@@ -21,21 +21,16 @@ a {
 /* ---------------------------Main------------------------- */
 
 /* ------------------Hero-Section----------------- */
-.hero-section {
-    position: relative;
-    margin-bottom: 1rem;
-}
-
-.hero-img {
-    height: 15rem;
+.hero-video {
+    max-height: 25rem;
     width: 100%;
     object-fit: cover;
 }
-h1 {
+.hero-section h1 {
     position: absolute;
     left: 0;
     right: 0;
-    top: 48%;
+    top: 35%;
     margin: 0 auto;
     width: 40%;
     text-align: center;
@@ -109,4 +104,101 @@ h1 {
 
 .testimonial-section p {
     margin-bottom: 0.7rem;
+}
+
+/* discover.html
+ ------------------------------------------------------------*/
+/* ---------------------------Main------------------------- */
+
+/* ------------------Hero-Section----------------- */
+.discover-hero {
+    margin-bottom: 3rem;
+}
+.discover-img {
+    max-height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.discover-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2%;
+    color: white;
+}
+
+.discover-text h1 {
+    margin-bottom: auto;
+    margin-top: 0;
+}
+
+.discover-text p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ---------------------Dicover-Destinations--------------- */
+.discover-destinations h2 {
+    margin-bottom: 0;
+}
+
+.destination-menu {
+    width: 70%;
+    margin: 0 auto 1.5rem;
+}
+
+.destination-menu ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.destination-menu a {
+    border: 0.1rem solid black;
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+#tehran {
+    display: none;
+}
+#tehran.tehran-toggled {
+    display: block;
+}
+
+#isfahan {
+    display: none;
+}
+#isfahan.isfahan-toggled {
+    display: block;
+}
+
+#shiraz {
+    display: none;
+}
+#shiraz.shiraz-toggled {
+    display: block;
+}
+
+.discover-destinations article {
+    margin: 0 auto;
+}
+
+.discover-figure {
+    padding: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+}
+
+.discover-figure img {
+    display: block;
+    max-height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+}
+
+.discover-figure figcaption {
+    font-size: 0.7rem;
 }
