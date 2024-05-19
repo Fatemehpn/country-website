@@ -38,9 +38,26 @@ li {
 /* --------------------------Links------------------------ */
 a {
     text-decoration: none;
+    color: black;
 }
 a:visited {
     color: #025920;
+}
+
+/* -------------------------Form-------------------------- */
+form {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+label,
+input,
+textarea {
+    display: block;
 }
 
 /* --------------------------Header----------------------- */
@@ -58,11 +75,12 @@ header p {
     background-color: white;
 }
 
-#nav-menu {
+/* #nav-menu {
     display: none;
     height: 0;
     overflow: hidden;
     padding-left: 0;
+    padding-right: 0.5rem;
     transition: height 0.5s ease;
 }
 
@@ -70,13 +88,27 @@ header p {
     display: block;
     position: absolute;
     text-align: right;
-    top: 2.5rem;
+    top: 2.79rem;
     height: 6.5rem;
     left: 0;
     right: 0;
     width: 100%;
     z-index: 200;
     background-color: white;
+} */
+
+#nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 2.4rem;
+    transition: right 0.3s ease;
+    padding: 0 0.3rem;
+}
+
+#nav-menu.toggled {
+    right: 0;
+    background-color: white;
+    z-index: 200;
 }
 
 #nav-menu li {
@@ -98,6 +130,10 @@ footer {
     gap: 0.5rem;
     background-color: #d0f0c0;
 }
+.icons {
+    display: flex;
+    gap: 0.5rem;
+}
 
 .icons-copy-right {
     display: flex;
@@ -115,5 +151,4 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
-    align-items: flex-end;
 }
