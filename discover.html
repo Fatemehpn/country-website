@@ -17,7 +17,7 @@
     </head>
     <body>
         <header>
-            <p>Visit Iran</p>
+            <img src="iran-map-v2.svg" alt="iran map" />
             <nav>
                 <button id="menu-toggle">
                     <svg
@@ -54,7 +54,7 @@
             </section>
             <section class="discover-destinations">
                 <h2>Choose Your Destination</h2>
-                <nav class="destination-menu">
+                <!-- <nav class="destination-menu">
                     <ul>
                         <li><a href="#tehran" id="tehran-link">Tehran</a></li>
                         <li>
@@ -62,9 +62,9 @@
                         </li>
                         <li><a href="#shiraz" id="shiraz-link">Shiraz</a></li>
                     </ul>
-                </nav>
-
-                <article id="tehran">
+                </nav> -->
+                <button class="accordion">Tehran</button>
+                <article id="tehran" class="discover-article panel">
                     <figure class="golestan-palace discover-figure">
                         <img
                             src="media/golestan-palace.jpg"
@@ -101,7 +101,9 @@
                         </figcaption>
                     </figure>
                 </article>
-                <article id="isfahan">
+
+                <button class="accordion">Isfahan</button>
+                <article id="isfahan" class="discover-article panel">
                     <figure class="naghshe-jahan discover-figure">
                         <img
                             src="media/naghshe-jahan-square.jpg"
@@ -137,7 +139,9 @@
                         </figcaption>
                     </figure>
                 </article>
-                <article id="shiraz">
+
+                <button class="accordion">Shiraz</button>
+                <article id="shiraz" class="discover-article panel">
                     <figure class="eram-garden discover-figure">
                         <img
                             src="media/eram-garden.jpg"

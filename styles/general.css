@@ -2,6 +2,7 @@
 /* 
 #025920
 #F2E74B
+#465D3C
  */
 
 /* ---------------------general styles----------------- */
@@ -41,7 +42,7 @@ figcaption {
 
 @media (min-width: 50em) {
     h1 {
-        font-size: 4.2rem;
+        font-size: 4.5rem;
         font-weight: 900;
     }
 
@@ -70,7 +71,15 @@ a {
     color: black;
 }
 a:visited {
-    color: #025920;
+    color: black;
+}
+
+a:hover {
+    background-color: #d0f0c0;
+}
+
+a:focus {
+    border: 0.1rem solid black;
 }
 
 /* -------------------------Form-------------------------- */
@@ -89,6 +98,16 @@ textarea {
     display: block;
 }
 
+@media (min-width: 50em) {
+    form {
+        width: 100%;
+    }
+    label,
+    input,
+    textarea {
+        width: 30rem;
+    }
+}
 /* --------------------------Header----------------------- */
 header {
     display: flex;
@@ -98,6 +117,11 @@ header {
 }
 header p {
     z-index: 999;
+}
+
+header img {
+    width: 2.5rem;
+    height: 2.5rem;
 }
 #menu-toggle {
     border: 0;
@@ -129,9 +153,13 @@ header p {
 #nav-menu {
     position: fixed;
     right: -100%;
-    top: 2.4rem;
+    top: 1.85rem;
     transition: right 0.3s ease;
     padding: 0 0.3rem;
+}
+
+#menu-toggle svg {
+    border: 1px;
 }
 
 #nav-menu.toggled {
@@ -145,15 +173,30 @@ header p {
 }
 
 @media (min-width: 50em) {
-    /* #menu-toggle {
+    #menu-toggle {
         display: none;
-    } */
+    }
 
-    /* #nav-menu {
-        position: relative;
+    #nav-menu {
         display: flex;
+        gap: 0.5rem;
+        position: absolute;
+        top: 0;
         right: 0;
-    } */
+        padding: 0.3rem;
+    }
+
+    #nav-menu a {
+        font-size: 1.4rem;
+        padding: 0.4rem 0.8rem;
+        /* border: 0.1rem solid black; */
+        border-radius: 5%;
+    }
+
+    header img {
+        width: 4rem;
+        height: 4rem;
+    }
 }
 
 /* ------------------------Hero Section------------- */
