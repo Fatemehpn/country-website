@@ -35,12 +35,58 @@ li {
     list-style: none;
 }
 
+figcaption {
+    font-size: 0.9rem;
+}
+
+@media (min-width: 50em) {
+    h1 {
+        font-size: 4.2rem;
+        font-weight: 900;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    figcaption {
+        font-size: 1.4rem;
+    }
+}
+
 /* --------------------------Links------------------------ */
 a {
     text-decoration: none;
+    color: black;
 }
 a:visited {
     color: #025920;
+}
+
+/* -------------------------Form-------------------------- */
+form {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+label,
+input,
+textarea {
+    display: block;
 }
 
 /* --------------------------Header----------------------- */
@@ -58,11 +104,12 @@ header p {
     background-color: white;
 }
 
-#nav-menu {
+/* #nav-menu {
     display: none;
     height: 0;
     overflow: hidden;
     padding-left: 0;
+    padding-right: 0.5rem;
     transition: height 0.5s ease;
 }
 
@@ -70,23 +117,48 @@ header p {
     display: block;
     position: absolute;
     text-align: right;
-    top: 2.5rem;
+    top: 2.79rem;
     height: 6.5rem;
     left: 0;
     right: 0;
     width: 100%;
     z-index: 200;
     background-color: white;
+} */
+
+#nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 2.4rem;
+    transition: right 0.3s ease;
+    padding: 0 0.3rem;
+}
+
+#nav-menu.toggled {
+    right: 0;
+    background-color: white;
+    z-index: 200;
 }
 
 #nav-menu li {
     margin-bottom: 0.3rem;
 }
 
+@media (min-width: 50em) {
+    /* #menu-toggle {
+        display: none;
+    } */
+
+    /* #nav-menu {
+        position: relative;
+        display: flex;
+        right: 0;
+    } */
+}
+
 /* ------------------------Hero Section------------- */
 .hero {
     position: relative;
-    margin-bottom: 1rem;
 }
 
 /* -------------------------Footer------------------- */
@@ -97,6 +169,11 @@ footer {
     align-items: center;
     gap: 0.5rem;
     background-color: #d0f0c0;
+    font-size: 1rem;
+}
+.icons {
+    display: flex;
+    gap: 0.5rem;
 }
 
 .icons-copy-right {
@@ -115,5 +192,22 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
-    align-items: flex-end;
+}
+
+@media (min-width: 50em) {
+    footer {
+        padding: 2rem 1.5rem;
+        font-size: 1.2rem;
+    }
+    footer p {
+        font-size: 1.2rem;
+    }
+    .icons {
+        gap: 1rem;
+    }
+
+    .icon {
+        width: 3rem;
+        height: 3rem;
+    }
 }

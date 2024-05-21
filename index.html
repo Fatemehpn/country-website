@@ -9,6 +9,29 @@
             href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
             rel="stylesheet"
         />
+
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+
         <link rel="stylesheet" href="styles/normalize-fwd.css" />
         <link rel="stylesheet" href="styles/general.css" />
         <link rel="stylesheet" href="styles/style.css" />
@@ -49,7 +72,7 @@
                     class="hero-img"
                 /> -->
                 <video loop autoplay class="hero-media hero-video">
-                    <source type="video/mp4" src="media/Untitled-1.mp4" />
+                    <source type="video/mp4" src="media/hero-video.mp4" />
                 </video>
                 <a href="#summary-section" class="hero-link">
                     <svg
@@ -69,18 +92,21 @@
             </section>
 
             <section class="summary-section" id="summary-section">
+                <h2>Start Your Journey</h2>
                 <article class="introduction">
-                    <h2>Start Your Journey</h2>
                     <figure>
                         <img
                             src="media/shushtar-resized.jpeg"
                             alt="Shushtar city in Iran"
                         />
                         <figcaption>
-                            Welcome to Iran, where beauty and history blend
-                            seamlessly. Explore ancient ruins, vibrant bazaars,
-                            and stunning landscapes. Come discover the magic of
-                            this incredible country.
+                            <p>
+                                Welcome to Iran, where beauty and history blend
+                                seamlessly. Explore ancient ruins, vibrant
+                                bazaars, and stunning landscapes. Come discover
+                                the magic of this incredible country.
+                            </p>
+                            <a href="discover.html">Discover More</a>
                         </figcaption>
                     </figure>
                 </article>
@@ -105,7 +131,7 @@
                         <cite>Ana Taylor</cite>
                     </blockquote>
                 </article>
-                <article>
+                <article class="second-testimonial">
                     <img
                         src="media/smiling-woman-resized.png"
                         alt="Smiling woman holding her phone"
@@ -174,10 +200,9 @@
                         >
                     </li>
                     <li><a href="discover.html">Discover</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="discover.html#contact-us">Contact Us</a></li>
                 </ul>
             </nav>
-            <section class="icons"></section>
         </footer>
     </body>
 </html>
