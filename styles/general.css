@@ -35,6 +35,35 @@ li {
     list-style: none;
 }
 
+figcaption {
+    font-size: 0.9rem;
+}
+
+@media (min-width: 50em) {
+    h1 {
+        font-size: 4.2rem;
+        font-weight: 900;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        margin-bottom: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    figcaption {
+        font-size: 1.4rem;
+    }
+}
+
 /* --------------------------Links------------------------ */
 a {
     text-decoration: none;
@@ -115,10 +144,21 @@ header p {
     margin-bottom: 0.3rem;
 }
 
+@media (min-width: 50em) {
+    /* #menu-toggle {
+        display: none;
+    } */
+
+    /* #nav-menu {
+        position: relative;
+        display: flex;
+        right: 0;
+    } */
+}
+
 /* ------------------------Hero Section------------- */
 .hero {
     position: relative;
-    margin-bottom: 1rem;
 }
 
 /* -------------------------Footer------------------- */
@@ -129,6 +169,7 @@ footer {
     align-items: center;
     gap: 0.5rem;
     background-color: #d0f0c0;
+    font-size: 1rem;
 }
 .icons {
     display: flex;
@@ -151,4 +192,22 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
+}
+
+@media (min-width: 50em) {
+    footer {
+        padding: 2rem 1.5rem;
+        font-size: 1.2rem;
+    }
+    footer p {
+        font-size: 1.2rem;
+    }
+    .icons {
+        gap: 1rem;
+    }
+
+    .icon {
+        width: 3rem;
+        height: 3rem;
+    }
 }
