@@ -21,17 +21,24 @@ a {
 /* ---------------------------Main------------------------- */
 
 /* ------------------Hero-Section----------------- */
-.hero-video {
+.hero-section div {
+    display: block;
+    overflow: hidden;
+    position: relative;
     max-height: 25rem;
+}
+.hero-video {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .hero-section h1 {
+    margin: 0;
     color: white;
     position: absolute;
     left: 0;
     right: 0;
-    top: 28%;
+    bottom: 0;
     background-color: #4b6240;
     text-align: center;
     z-index: 100;
@@ -62,21 +69,14 @@ a {
     background-color: white;
 }
 
-@media (min-width: 25) {
-    .hero-section h1 {
-        top: 60%;
-    }
-}
 @media (min-width: 50em) {
-    .hero-section {
-        margin-bottom: 5rem;
-    }
-    .hero-video {
-        max-height: 35rem;
+    .hero-section div {
+        height: 37rem;
+        max-height: 37rem;
     }
 
-    .hero-section h1 {
-        top: 45%;
+    .hero-section {
+        margin-bottom: 7rem;
     }
 
     .hero-link {
@@ -224,7 +224,7 @@ a {
 
 /* ------------------Hero-Section----------------- */
 .discover-hero {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 .discover-img {
     max-height: 25rem;
@@ -269,10 +269,10 @@ a {
 }
 /* ---------------------Dicover-Destinations--------------- */
 .discover-destinations {
-    margin-bottom: 2rem;
+    margin: 2rem auto;
 }
 .discover-destinations h2 {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
 }
 
 .destination-menu {
@@ -280,31 +280,19 @@ a {
     margin: 0 auto 1.5rem;
 }
 
-.destination-menu ul {
-    padding-left: 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.destination-menu a {
-    border: 0.1rem solid black;
-    padding: 0.4rem 0.4rem;
-    border-radius: 0.3rem;
-}
-
-#destination-img {
-    display: block;
-    padding: 0 1rem;
-    max-width: 20rem;
-    margin: 2rem auto;
-    border-radius: 3%;
-}
-
 .discover-destinations article {
     margin: 0 auto;
 }
 
 .accordion {
+    width: 90%;
+    height: 3rem;
+    color: white;
+    background-color: #4b6240;
+    border: none;
+    border-radius: 0.2rem;
+    margin: 0.5rem 1rem;
+    transition: 0.4s;
 }
 
 .panel {
@@ -336,19 +324,9 @@ a {
         margin-bottom: 3rem;
     }
 
-    .destination-menu {
-        width: 50%;
-        margin: 0 auto 4rem;
-        font-size: 1.3rem;
-    }
-
-    .destination-menu a {
-        padding: 1rem 1.6rem;
-        border-radius: 0.5rem;
-    }
-
-    #destination-img {
-        max-width: 40rem;
+    .panel {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 /* -------------------------Form-Section------------------- */
@@ -463,6 +441,7 @@ a {
     max-height: 25rem;
     width: 100%;
     object-fit: cover;
+    filter: brightness(55%);
 }
 
 .credits-hero h1 {
@@ -472,8 +451,18 @@ a {
     bottom: 0;
     text-align: center;
     z-index: 300;
+    color: white;
 }
 
+@media (min-width: 50em) {
+    .credits-hero {
+        margin-bottom: 7rem;
+    }
+
+    .credits-img {
+        max-height: 37rem;
+    }
+}
 /* ------------------------Table-Section--------------- */
 .credit-table h2 {
     margin-bottom: 0;
@@ -506,4 +495,25 @@ td {
 }
 thead {
     text-align: center;
+}
+
+@media (min-width: 50em) {
+    .credit-table {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        gap: 3rem;
+    }
+    .credit-table h2 {
+        grid-column: 1/-1;
+        margin-bottom: 1.5rem;
+    }
+
+    .table-1 {
+        justify-self: right;
+    }
+
+    .table-2 {
+        justify-self: left;
+    }
 }
