@@ -8,16 +8,16 @@ menuBtn.addEventListener("click", () => {
     navList.classList.toggle("toggled");
 });
 
-for (let i = 0; i < accordianBtn.length; i++) {
-    accordianBtn[i].addEventListener("click", function () {
-        this.classList.toggle("active");
+// for (let i = 0; i < accordianBtn.length; i++) {
+//     accordianBtn[i].addEventListener("click", function () {
+//         this.classList.toggle("active");
 
-        let panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-}
+//         let panel = this.nextElementSibling;
+//         if (panel.style.display === "block") {
+//             panel.style.display = "none";
+//         } else {
+//             panel.style.display = "block";
+//         }
+//     });
+// }
 //  Used the sample code from w3schools website

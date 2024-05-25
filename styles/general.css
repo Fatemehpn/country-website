@@ -12,8 +12,9 @@ body {
 }
 
 h1 {
+    font-family: "PT Serif", serif;
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 h2 {
@@ -204,6 +205,37 @@ header img {
     position: relative;
 }
 
+.hero-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2%;
+    color: white;
+    z-index: 150;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero-text h1 {
+    margin-bottom: auto;
+    margin-top: 0;
+}
+
+.hero-text p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (min-width: 50em) {
+    .hero-text {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hero-text p {
+        font-size: 1.8rem;
+    }
+}
 /* -------------------------Footer------------------- */
 footer {
     display: flex;
