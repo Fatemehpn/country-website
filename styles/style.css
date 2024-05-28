@@ -159,6 +159,10 @@
     margin: 1rem auto;
 }
 
+.testimonial-section h3 {
+    display: none;
+}
+
 .testimonial-section img {
     width: 10rem;
     border: #4b6240 0.4rem solid;
