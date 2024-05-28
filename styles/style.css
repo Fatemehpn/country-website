@@ -16,6 +16,7 @@
     object-fit: cover;
 }
 .hero-section h1 {
+    text-transform: uppercase;
     margin: 0;
     color: white;
     position: absolute;
@@ -156,6 +157,10 @@
     padding: 1rem 0;
     border-radius: 1rem;
     margin: 1rem auto;
+}
+
+.testimonial-section h3 {
+    display: none;
 }
 
 .testimonial-section img {
