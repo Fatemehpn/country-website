@@ -15,6 +15,7 @@ h1 {
     font-family: "PT Serif", serif;
     font-size: 3rem;
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 h2 {
